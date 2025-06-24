@@ -1,0 +1,23 @@
+interface InfDemo
+{
+	void sales();
+	void stock();
+}
+class InterfaceDemo1 
+{
+	public static void main(String[] args) 
+	{
+		InterfaceDemo1 d1 = new Demo() {
+			public void sales ()
+			{
+				System.out.println("Sales");
+			}
+			public void stock ()
+			{
+				System.out.println("Stocks");
+			}
+		};
+		d1.sales();
+		d1.stock();
+	}
+}

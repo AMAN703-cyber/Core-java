@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Table 
+{
+	public static void main(String[] args) 
+	{
+		int i,n,k;
+		Scanner scr = new Scanner(System.in);
+		System.out.println("Enter the number to generate table : ");
+		n=scr.nextInt();
+		System.out.println("Enter the term upto which you have to generate table  : ");
+		k=scr.nextInt();
+		for (i=1;i<=k;i++ )
+		{
+			System.out.println(i*n);
+		}
+		System.out.println(f);
+	}
+}

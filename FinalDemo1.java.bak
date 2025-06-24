@@ -1,0 +1,15 @@
+class FinalDemo1 
+{
+	void m1(final int x)
+	{
+		System.out.println("X="+x);
+	}
+	public static void main(String[] args) 
+	{
+		FinalDemo1 d1= new FinalDemo1();
+		for (int i=1;i<=10;i++ )
+		{
+			d1.m1();
+		}
+	}
+}

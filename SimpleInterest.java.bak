@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class SimpleInterest
+{
+	public static void main(String[] args) 
+	{
+		double Principle,interest,time,SI;
+		Scanner scr = new Scanner(System.in);
+		System.out.println("Enter Principle amount(in rupees):");
+		Principle=scr.nextDouble();
+		System.out.println("Enter Interest(in percentage ):");
+		interest=scr.nextDouble();
+		System.out.println("Enter Time(in years):");
+		time=scr.nextDouble();
+		SI = (Principle * interest * time)/100;
+		System.out.println("Simple Interest value :"+SI);
+	}
+}

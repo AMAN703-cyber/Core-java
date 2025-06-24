@@ -1,0 +1,35 @@
+import java.util.Scanner;
+class  Largestnumber
+{
+	public static void main(String[] args) 
+	{
+		Scanner scr= new Scanner(System.in);
+		int n1,n2,n3,n4,n5;
+		System.out.println("Enter the first number :");
+		n1=scr.nextInt();
+		System.out.println("Enter the second number :");
+		n2=scr.nextInt();
+		System.out.println("Enter the third number :");
+		n3=scr.nextInt();
+		System.out.println("Enter the fourth number :");
+		n4=scr.nextInt();
+		System.out.println("Enter the fifth number :");
+		n5=scr.nextInt();
+		
+		if(n1>n2 && n1>n3 && n1>n4 && n1>n5){
+			System.out.println("The largest number is "+n1);
+		}else if (n2>n3 && n2>n4 && n2>n5)
+		{
+			System.out.println("The largest number is "+n2);
+		}else if (n3>n4 && n3>n5)
+		{
+			System.out.println("The largest number is "+n3);
+		}else if (n4>n5)
+		{
+			System.out.println("The largest number is "+n4);
+		}
+		else {
+		System.out.println("The largest number is "+n5);
+		}
+	}
+}

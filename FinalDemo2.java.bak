@@ -1,0 +1,20 @@
+class FinalDemo
+{
+	final void m1()
+	{
+		System.out.println("Hello Indore");
+	}
+}
+class FinalDemo2 extends FinalDemo
+{
+	void m1()
+	{
+		System.out.println("Hello India");
+	}
+}
+	public static void main(String[] args) 
+	{
+		FinalDemo d1= new FinalDemo();
+		d1.m1();
+	}
+}

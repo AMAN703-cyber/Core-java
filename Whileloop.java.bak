@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Whileloop
+{
+	public static void main(String[] args) 
+	{
+		int n,t,Sm=0;
+		Scanner scr = new Scanner(System.in);
+		while(n!=0)
+		{
+			t=n%10;
+			Sm=Sm+t;
+			n=n/10;
+		}
+		System.out.println(Sm);
+	}
+}

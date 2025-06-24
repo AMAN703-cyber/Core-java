@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Palindrome
+{
+	public static void main(String[] args) 
+	{
+		int n,t,Rv=0,Ognum;
+		Scanner scr = new Scanner(System.in);
+		System.out.println("Enter the number :");
+		n=scr.nextInt();
+		Ognum=n;
+		while(n!=0)
+		{
+			t=n%10;
+			Rv=(Rv*10)+t;
+			n=n/10;
+		}
+		if(Ognum==Rv)
+		{
+			System.out.println(Ognum+" is a palindrome number ");
+		}
+		else 
+		{
+			System.out.println(Ognum+" is not a palindrome number ");	
+		}
+	}
+}

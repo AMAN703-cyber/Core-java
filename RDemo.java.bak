@@ -1,0 +1,20 @@
+class RDemo {
+    public static void main(String[] args) {
+        Runtime r1 = Runtime.getRuntime();
+
+        try {
+            // Launch multiple processes
+            Process p1 = r1.exec("mspaint.exe");
+			Thread.sleep(5000);
+			 p1.destroy();
+            Process p2 = r1.exec("notepad.exe");
+			Thread.sleep(5000);
+			 p2.destroy();
+            Process p3 = r1.exec("calc.exe");
+            Thread.sleep(5000);
+			 p3.destroy();
+			 } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
+    }
+}

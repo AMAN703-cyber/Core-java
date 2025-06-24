@@ -1,0 +1,22 @@
+interface InterfaceDemo
+{
+	public static void main(String[] args){
+	void sales();
+	void stock();
+	}
+}
+class InfDemo implements InterfaceDemo
+{ 
+	public void sales()
+	{
+		System.out.println("Sales");
+	}
+	public void stock()
+	{
+		System.out.println("Stocks");
+	}
+	public static void main(String[] args) 
+	{
+		InfDemo d1 = new InfDemo();
+	}
+}

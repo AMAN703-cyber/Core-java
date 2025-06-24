@@ -1,0 +1,81 @@
+import java.util.Scanner;
+class Result
+{
+public static void main(String args[])
+{
+float m1,m2,m3,eds,java,Totalmarks,percentage;
+int Failedsubjects=0;
+Scanner scr=new Scanner(System.in);
+System.out.println("Enter the marks for M1 : ");
+m1=scr.nextFloat();
+System.out.println("Enter the marks for M2 : ");
+m2=scr.nextFloat();
+System.out.println("Enter the marks for M3 : ");
+m3=scr.nextFloat();
+System.out.println("Enter the marks for EDS : ");
+eds=scr.nextFloat();
+System.out.println("Enter the marks for JAVA : ");
+java=scr.nextFloat();
+Totalmarks=(m1+m2+m3+eds+java);
+percentage=Totalmarks/5;
+if (m1<40)
+{
+	Failedsubjects++;
+	System.out.println("ATKT in M1");
+}else
+	{
+	System.out.println("Passed in M1");
+	}
+	if (m2<40)
+{
+	Failedsubjects++;
+	System.out.println("ATKT in M2");
+}else
+	{
+	System.out.println("Passed in M2");
+	}
+	if (m3<40)
+{
+	Failedsubjects++;
+	System.out.println("ATKT in M3");
+}else
+	{
+	System.out.println("Passed in M3");
+	}
+	if (eds<40)
+{
+	Failedsubjects++;
+	System.out.println("ATKT in EDS");
+}else
+	{
+	System.out.println("Passed in EDS");
+	}
+	if (java<40)
+{
+	Failedsubjects++;
+	System.out.println("ATKT in JAVA");
+}else
+	{
+	System.out.println("Passed in JAVA");
+	}
+	if (Failedsubjects>=3)
+	{
+		System.out.println("Semester back");
+	}
+	else if(Failedsubjects>0 && Failedsubjects<3)
+	{
+		System.out.println("ATKT in" + Failedsubjects +" Subjects");
+	}else{
+            if (percentage >= 60) {
+                System.out.println("Result: 1st Division with "+percentage+"%");
+            } else if (percentage >= 50) {
+                System.out.println("Result: 2nd Division with "+percentage+"%");
+            } else if (percentage >= 40) {
+                System.out.println("Result: 3rd Division with "+percentage+"%");
+            } else{
+				System.out.println("Failed in Semester Exam with "+percentage+"%");
+            } 
+        }
+	}
+}
+

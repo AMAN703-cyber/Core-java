@@ -1,0 +1,20 @@
+interface Demo
+{
+	defaault void sales()
+	{
+		System.out.println("Sales");
+	}
+	defaault void stock()
+	{
+		System.out.println("Stock");
+	}
+}
+class InfDemo1 implements Demo
+{
+	public static void main(String args[])
+	{
+	InfDemo1 d1=new InfDemo1();
+	d1.sales();
+	d1.stock();
+	}
+}

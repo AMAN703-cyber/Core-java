@@ -1,0 +1,14 @@
+class FinalDemo 
+{
+	final int x=9000;
+	void m1()
+	{
+		x=x+2000;
+		System.out.println("X = "+x);
+	}
+	public static void main(String[] args) 
+	{
+		FinalDemo d1 =new FinalDemo();
+		d1.m1();
+	}
+}
