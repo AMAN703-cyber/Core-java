@@ -1,0 +1,21 @@
+class AbstractClass 
+{
+	void m1()
+	{
+		System.out.println("Hello indore");
+	}
+}
+class Demo extends AbstractClass
+{
+	void m2()
+	{
+		System.out.println("Hello India");
+	}
+	public static void main(String[] args) 
+	{
+		AbstractClass d1 = new Demo();
+		d1.m1();
+		// error d1.m2();
+		System.out.println("Hello World!");
+	}
+}

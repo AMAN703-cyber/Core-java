@@ -1,0 +1,21 @@
+class ExpDemo2 
+{
+	void m1()
+	{
+		System.out.println("A");
+		throw new NumberFormatException();
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("B");
+		ExpDemo d2=new ExpDemo2();
+		try{
+			d2.m1();
+			System.out.println("D");
+		}catch(Exception tt)
+		{
+		System.out.println("C");
+		}
+		System.out.println("E");
+	}
+}

@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Armstrong
+{
+	public static void main(String[] args) 
+	{
+		int n,t,Result=0,Ognum;
+		Scanner scr = new Scanner(System.in);
+		System.out.println("Enter the number :");
+		n=scr.nextInt();
+		Ognum=n;
+		int temp = Ognum;
+        int count = 0;
+        while (temp != 0) {
+            temp = temp / 10;
+            count++;
+        }
+		while(n!=0)
+		{
+			t=n%10;
+			Result+=(t^count);
+			n=n/10;
+		}
+		if(Ognum==Result)
+		{
+			System.out.println(Ognum+" is a Armstrong number ");
+		}
+		else 
+		{
+			System.out.println(Ognum+" is not a Armstrong number ");	
+		}
+	}
+}

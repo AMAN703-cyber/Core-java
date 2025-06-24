@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Fibonacci 
+{
+	public static void main(String[] args) 
+	{
+		int i,n,f=-1,t=1,p;
+		System.out.println("Enter the number of terms upto which you have to print fibonacci series :");
+		n=scr.nextInt();
+		for (i=0;i<n;i++)
+		{
+			p=f+t;
+			System.out.println(p);
+			f=t;
+			t=p;
+		}
+	}
+}

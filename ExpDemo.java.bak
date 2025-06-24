@@ -1,0 +1,21 @@
+class ExpDemo 
+{
+	public static void main(String[] args) 
+	{
+		int a=40,b=5,c,i;
+		try{
+			for (i=0;i<10;i++; )
+			{
+				c=a/b;
+				System.out.println(c);
+				b--;
+			}
+		System.out.println("Hello INDIA");
+		System.out.println("Hello INDIA");
+	}catch(ArithmeticException ae)
+		{
+			System.out.println("Catch working");
+		}
+		System.out.println("Hello INDORE");
+		System.out.println("Hello INDORE");
+}
